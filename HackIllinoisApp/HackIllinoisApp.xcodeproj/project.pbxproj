@@ -1,0 +1,980 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		841117142B8A5C1E0022E844 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841117132B8A5C1E0022E844 /* ProfileView.swift */; };
+		841117172B8A692E0022E844 /* InviteContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841117162B8A692D0022E844 /* InviteContactsView.swift */; };
+		8411171A2B8A6B7E0022E844 /* ConfigureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841117192B8A6B7E0022E844 /* ConfigureView.swift */; };
+		8411171C2B8A6D560022E844 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411171B2B8A6D550022E844 /* UserService.swift */; };
+		8411171E2B8A72BC0022E844 /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411171D2B8A72BC0022E844 /* AppUser.swift */; };
+		841117202B8A88670022E844 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411171F2B8A88670022E844 /* PostService.swift */; };
+		841117222B8A8A050022E844 /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841117212B8A8A050022E844 /* UploadPostViewModel.swift */; };
+		841117242B8A95670022E844 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841117232B8A95670022E844 /* FeedViewModel.swift */; };
+		841117262B8A963E0022E844 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841117252B8A963E0022E844 /* Post.swift */; };
+		841117292B8ADCF00022E844 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841117282B8ADCF00022E844 /* ChatView.swift */; };
+		8411172B2B8ADE860022E844 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411172A2B8ADE860022E844 /* Message.swift */; };
+		8411172E2B8ADEEA0022E844 /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411172D2B8ADEEA0022E844 /* MessageBubble.swift */; };
+		841117302B8AE3A70022E844 /* MessageField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411172F2B8AE3A60022E844 /* MessageField.swift */; };
+		841117342B8AE9D50022E844 /* MessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841117332B8AE9D50022E844 /* MessagesManager.swift */; };
+		841117382B8B13840022E844 /* ConversationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841117372B8B13840022E844 /* ConversationManager.swift */; };
+		8411173A2B8B20460022E844 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841117392B8B20460022E844 /* ChatViewModel.swift */; };
+		849504E72B898BCA00690026 /* HackIllinoisAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849504E62B898BCA00690026 /* HackIllinoisAppApp.swift */; };
+		849504E92B898BCA00690026 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849504E82B898BCA00690026 /* ContentView.swift */; };
+		849504EB2B898BCC00690026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849504EA2B898BCC00690026 /* Assets.xcassets */; };
+		849504EF2B898BCC00690026 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849504EE2B898BCC00690026 /* Preview Assets.xcassets */; };
+		849504F92B898BCD00690026 /* HackIllinoisAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849504F82B898BCD00690026 /* HackIllinoisAppTests.swift */; };
+		849505032B898BCD00690026 /* HackIllinoisAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849505022B898BCD00690026 /* HackIllinoisAppUITests.swift */; };
+		849505052B898BCD00690026 /* HackIllinoisAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849505042B898BCD00690026 /* HackIllinoisAppUITestsLaunchTests.swift */; };
+		8495051A2B89900200690026 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849505192B89900200690026 /* FeedView.swift */; };
+		8495051D2B89930800690026 /* UpdateRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495051C2B89930800690026 /* UpdateRowView.swift */; };
+		849505202B89BD0500690026 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495051F2B89BD0500690026 /* MainTabView.swift */; };
+		849505232B89BEC000690026 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849505222B89BEC000690026 /* MessagesView.swift */; };
+		849505262B89C36800690026 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849505252B89C36800690026 /* PostView.swift */; };
+		8495052B2B89C74800690026 /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495052A2B89C74800690026 /* TextArea.swift */; };
+		849505302B89D16800690026 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495052F2B89D16800690026 /* LoginView.swift */; };
+		849505322B89D17D00690026 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849505312B89D17D00690026 /* RegistrationView.swift */; };
+		849505342B89D4B500690026 /* RoundedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849505332B89D4B500690026 /* RoundedShape.swift */; };
+		849505362B89E1A700690026 /* CustomInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849505352B89E1A700690026 /* CustomInputField.swift */; };
+		849505382B89E6C900690026 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 849505372B89E6C900690026 /* GoogleService-Info.plist */; };
+		8495053B2B89E7F700690026 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8495053A2B89E7F700690026 /* FirebaseAuth */; };
+		8495053D2B89E7F700690026 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 8495053C2B89E7F700690026 /* FirebaseFirestore */; };
+		8495053F2B89E7F700690026 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8495053E2B89E7F700690026 /* FirebaseFirestoreSwift */; };
+		849505412B89E7F700690026 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 849505402B89E7F700690026 /* FirebaseStorage */; };
+		849505432B89F53600690026 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849505422B89F53600690026 /* AuthViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		849504F52B898BCD00690026 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 849504DB2B898BC900690026 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 849504E22B898BCA00690026;
+			remoteInfo = HackIllinoisApp;
+		};
+		849504FF2B898BCD00690026 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 849504DB2B898BC900690026 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 849504E22B898BCA00690026;
+			remoteInfo = HackIllinoisApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		841117132B8A5C1E0022E844 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		841117162B8A692D0022E844 /* InviteContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteContactsView.swift; sourceTree = "<group>"; };
+		841117192B8A6B7E0022E844 /* ConfigureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureView.swift; sourceTree = "<group>"; };
+		8411171B2B8A6D550022E844 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		8411171D2B8A72BC0022E844 /* AppUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
+		8411171F2B8A88670022E844 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		841117212B8A8A050022E844 /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
+		841117232B8A95670022E844 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		841117252B8A963E0022E844 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		841117282B8ADCF00022E844 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		8411172A2B8ADE860022E844 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		8411172D2B8ADEEA0022E844 /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
+		8411172F2B8AE3A60022E844 /* MessageField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageField.swift; sourceTree = "<group>"; };
+		841117332B8AE9D50022E844 /* MessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesManager.swift; sourceTree = "<group>"; };
+		841117372B8B13840022E844 /* ConversationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationManager.swift; sourceTree = "<group>"; };
+		841117392B8B20460022E844 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		849504E32B898BCA00690026 /* HackIllinoisApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackIllinoisApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		849504E62B898BCA00690026 /* HackIllinoisAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackIllinoisAppApp.swift; sourceTree = "<group>"; };
+		849504E82B898BCA00690026 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		849504EA2B898BCC00690026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		849504EC2B898BCC00690026 /* HackIllinoisApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HackIllinoisApp.entitlements; sourceTree = "<group>"; };
+		849504EE2B898BCC00690026 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		849504F42B898BCD00690026 /* HackIllinoisAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackIllinoisAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		849504F82B898BCD00690026 /* HackIllinoisAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackIllinoisAppTests.swift; sourceTree = "<group>"; };
+		849504FE2B898BCD00690026 /* HackIllinoisAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackIllinoisAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		849505022B898BCD00690026 /* HackIllinoisAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackIllinoisAppUITests.swift; sourceTree = "<group>"; };
+		849505042B898BCD00690026 /* HackIllinoisAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackIllinoisAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		849505192B89900200690026 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		8495051C2B89930800690026 /* UpdateRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateRowView.swift; sourceTree = "<group>"; };
+		8495051F2B89BD0500690026 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		849505222B89BEC000690026 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		849505252B89C36800690026 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		8495052A2B89C74800690026 /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
+		8495052F2B89D16800690026 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		849505312B89D17D00690026 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		849505332B89D4B500690026 /* RoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShape.swift; sourceTree = "<group>"; };
+		849505352B89E1A700690026 /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
+		849505372B89E6C900690026 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		849505422B89F53600690026 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		849504E02B898BCA00690026 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8495053B2B89E7F700690026 /* FirebaseAuth in Frameworks */,
+				849505412B89E7F700690026 /* FirebaseStorage in Frameworks */,
+				8495053D2B89E7F700690026 /* FirebaseFirestore in Frameworks */,
+				8495053F2B89E7F700690026 /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849504F12B898BCD00690026 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849504FB2B898BCD00690026 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		841117152B8A691C0022E844 /* Invite */ = {
+			isa = PBXGroup;
+			children = (
+				841117162B8A692D0022E844 /* InviteContactsView.swift */,
+			);
+			path = Invite;
+			sourceTree = "<group>";
+		};
+		841117182B8A6B700022E844 /* Configure */ = {
+			isa = PBXGroup;
+			children = (
+				841117192B8A6B7E0022E844 /* ConfigureView.swift */,
+			);
+			path = Configure;
+			sourceTree = "<group>";
+		};
+		841117272B8ADCDC0022E844 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				841117322B8AE9BF0022E844 /* Manager */,
+				8411172C2B8ADEDC0022E844 /* UIView */,
+				841117282B8ADCF00022E844 /* ChatView.swift */,
+				841117392B8B20460022E844 /* ChatViewModel.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		8411172C2B8ADEDC0022E844 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				8411172D2B8ADEEA0022E844 /* MessageBubble.swift */,
+				8411172F2B8AE3A60022E844 /* MessageField.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		841117322B8AE9BF0022E844 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				841117332B8AE9D50022E844 /* MessagesManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		841117352B8B13250022E844 /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				841117362B8B13690022E844 /* Manager */,
+			);
+			path = Conversation;
+			sourceTree = "<group>";
+		};
+		841117362B8B13690022E844 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				841117372B8B13840022E844 /* ConversationManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		849504DA2B898BC900690026 = {
+			isa = PBXGroup;
+			children = (
+				849504E52B898BCA00690026 /* HackIllinoisApp */,
+				849504F72B898BCD00690026 /* HackIllinoisAppTests */,
+				849505012B898BCD00690026 /* HackIllinoisAppUITests */,
+				849504E42B898BCA00690026 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		849504E42B898BCA00690026 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				849504E32B898BCA00690026 /* HackIllinoisApp.app */,
+				849504F42B898BCD00690026 /* HackIllinoisAppTests.xctest */,
+				849504FE2B898BCD00690026 /* HackIllinoisAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		849504E52B898BCA00690026 /* HackIllinoisApp */ = {
+			isa = PBXGroup;
+			children = (
+				849505142B898C0F00690026 /* Core */,
+				849505132B898C0F00690026 /* Service */,
+				849505122B898C0D00690026 /* Model */,
+				849505112B898BFD00690026 /* Extentions */,
+				849504E62B898BCA00690026 /* HackIllinoisAppApp.swift */,
+				8495054B2B8A586300690026 /* New Group */,
+				849504E82B898BCA00690026 /* ContentView.swift */,
+				849504EA2B898BCC00690026 /* Assets.xcassets */,
+				849505372B89E6C900690026 /* GoogleService-Info.plist */,
+				849504EC2B898BCC00690026 /* HackIllinoisApp.entitlements */,
+				849504ED2B898BCC00690026 /* Preview Content */,
+			);
+			path = HackIllinoisApp;
+			sourceTree = "<group>";
+		};
+		849504ED2B898BCC00690026 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				849504EE2B898BCC00690026 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		849504F72B898BCD00690026 /* HackIllinoisAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				849504F82B898BCD00690026 /* HackIllinoisAppTests.swift */,
+			);
+			path = HackIllinoisAppTests;
+			sourceTree = "<group>";
+		};
+		849505012B898BCD00690026 /* HackIllinoisAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				849505022B898BCD00690026 /* HackIllinoisAppUITests.swift */,
+				849505042B898BCD00690026 /* HackIllinoisAppUITestsLaunchTests.swift */,
+			);
+			path = HackIllinoisAppUITests;
+			sourceTree = "<group>";
+		};
+		849505112B898BFD00690026 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		849505122B898C0D00690026 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8411171D2B8A72BC0022E844 /* AppUser.swift */,
+				841117252B8A963E0022E844 /* Post.swift */,
+				8411172A2B8ADE860022E844 /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		849505132B898C0F00690026 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8411171B2B8A6D550022E844 /* UserService.swift */,
+				8411171F2B8A88670022E844 /* PostService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		849505142B898C0F00690026 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				841117352B8B13250022E844 /* Conversation */,
+				841117272B8ADCDC0022E844 /* Chat */,
+				841117182B8A6B700022E844 /* Configure */,
+				841117152B8A691C0022E844 /* Invite */,
+				849505442B8A581000690026 /* Profile */,
+				8495052C2B89D0EC00690026 /* Authentication */,
+				849505242B89C35400690026 /* Post */,
+				849505212B89BE1B00690026 /* Messages */,
+				8495051E2B89BCF000690026 /* MainTab */,
+				849505152B898F8300690026 /* Components */,
+				849505162B898F9800690026 /* Feed */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		849505152B898F8300690026 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8495051B2B8991CB00690026 /* Posts */,
+				8495052A2B89C74800690026 /* TextArea.swift */,
+				849505332B89D4B500690026 /* RoundedShape.swift */,
+				849505352B89E1A700690026 /* CustomInputField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		849505162B898F9800690026 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				849505182B898FE100690026 /* View */,
+				849505172B898FDA00690026 /* ViewModels */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		849505172B898FDA00690026 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				841117232B8A95670022E844 /* FeedViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		849505182B898FE100690026 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				849505192B89900200690026 /* FeedView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8495051B2B8991CB00690026 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				8495051C2B89930800690026 /* UpdateRowView.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		8495051E2B89BCF000690026 /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				8495051F2B89BD0500690026 /* MainTabView.swift */,
+			);
+			path = MainTab;
+			sourceTree = "<group>";
+		};
+		849505212B89BE1B00690026 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				849505222B89BEC000690026 /* MessagesView.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		849505242B89C35400690026 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				849505282B89C56E00690026 /* Views */,
+				849505272B89C56700690026 /* ViewModels */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		849505272B89C56700690026 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				841117212B8A8A050022E844 /* UploadPostViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		849505282B89C56E00690026 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				849505252B89C36800690026 /* PostView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8495052C2B89D0EC00690026 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				8495052E2B89D15200690026 /* Views */,
+				8495052D2B89D14A00690026 /* ViewModels */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		8495052D2B89D14A00690026 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				849505422B89F53600690026 /* AuthViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8495052E2B89D15200690026 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8495052F2B89D16800690026 /* LoginView.swift */,
+				849505312B89D17D00690026 /* RegistrationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		849505442B8A581000690026 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				841117132B8A5C1E0022E844 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		8495054B2B8A586300690026 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		849504E22B898BCA00690026 /* HackIllinoisApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 849505082B898BCD00690026 /* Build configuration list for PBXNativeTarget "HackIllinoisApp" */;
+			buildPhases = (
+				849504DF2B898BCA00690026 /* Sources */,
+				849504E02B898BCA00690026 /* Frameworks */,
+				849504E12B898BCA00690026 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HackIllinoisApp;
+			packageProductDependencies = (
+				8495053A2B89E7F700690026 /* FirebaseAuth */,
+				8495053C2B89E7F700690026 /* FirebaseFirestore */,
+				8495053E2B89E7F700690026 /* FirebaseFirestoreSwift */,
+				849505402B89E7F700690026 /* FirebaseStorage */,
+			);
+			productName = HackIllinoisApp;
+			productReference = 849504E32B898BCA00690026 /* HackIllinoisApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		849504F32B898BCD00690026 /* HackIllinoisAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8495050B2B898BCD00690026 /* Build configuration list for PBXNativeTarget "HackIllinoisAppTests" */;
+			buildPhases = (
+				849504F02B898BCD00690026 /* Sources */,
+				849504F12B898BCD00690026 /* Frameworks */,
+				849504F22B898BCD00690026 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				849504F62B898BCD00690026 /* PBXTargetDependency */,
+			);
+			name = HackIllinoisAppTests;
+			productName = HackIllinoisAppTests;
+			productReference = 849504F42B898BCD00690026 /* HackIllinoisAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		849504FD2B898BCD00690026 /* HackIllinoisAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8495050E2B898BCD00690026 /* Build configuration list for PBXNativeTarget "HackIllinoisAppUITests" */;
+			buildPhases = (
+				849504FA2B898BCD00690026 /* Sources */,
+				849504FB2B898BCD00690026 /* Frameworks */,
+				849504FC2B898BCD00690026 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				849505002B898BCD00690026 /* PBXTargetDependency */,
+			);
+			name = HackIllinoisAppUITests;
+			productName = HackIllinoisAppUITests;
+			productReference = 849504FE2B898BCD00690026 /* HackIllinoisAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		849504DB2B898BC900690026 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					849504E22B898BCA00690026 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					849504F32B898BCD00690026 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 849504E22B898BCA00690026;
+					};
+					849504FD2B898BCD00690026 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 849504E22B898BCA00690026;
+					};
+				};
+			};
+			buildConfigurationList = 849504DE2B898BC900690026 /* Build configuration list for PBXProject "HackIllinoisApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 849504DA2B898BC900690026;
+			packageReferences = (
+				849505392B89E7F700690026 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 849504E42B898BCA00690026 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				849504E22B898BCA00690026 /* HackIllinoisApp */,
+				849504F32B898BCD00690026 /* HackIllinoisAppTests */,
+				849504FD2B898BCD00690026 /* HackIllinoisAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		849504E12B898BCA00690026 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849504EF2B898BCC00690026 /* Preview Assets.xcassets in Resources */,
+				849504EB2B898BCC00690026 /* Assets.xcassets in Resources */,
+				849505382B89E6C900690026 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849504F22B898BCD00690026 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849504FC2B898BCD00690026 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		849504DF2B898BCA00690026 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849505262B89C36800690026 /* PostView.swift in Sources */,
+				841117262B8A963E0022E844 /* Post.swift in Sources */,
+				8411172E2B8ADEEA0022E844 /* MessageBubble.swift in Sources */,
+				841117292B8ADCF00022E844 /* ChatView.swift in Sources */,
+				8495051D2B89930800690026 /* UpdateRowView.swift in Sources */,
+				849504E92B898BCA00690026 /* ContentView.swift in Sources */,
+				841117382B8B13840022E844 /* ConversationManager.swift in Sources */,
+				849505302B89D16800690026 /* LoginView.swift in Sources */,
+				849505362B89E1A700690026 /* CustomInputField.swift in Sources */,
+				8411173A2B8B20460022E844 /* ChatViewModel.swift in Sources */,
+				849505232B89BEC000690026 /* MessagesView.swift in Sources */,
+				8411171C2B8A6D560022E844 /* UserService.swift in Sources */,
+				8495051A2B89900200690026 /* FeedView.swift in Sources */,
+				841117142B8A5C1E0022E844 /* ProfileView.swift in Sources */,
+				849504E72B898BCA00690026 /* HackIllinoisAppApp.swift in Sources */,
+				8411171E2B8A72BC0022E844 /* AppUser.swift in Sources */,
+				841117342B8AE9D50022E844 /* MessagesManager.swift in Sources */,
+				841117302B8AE3A70022E844 /* MessageField.swift in Sources */,
+				841117172B8A692E0022E844 /* InviteContactsView.swift in Sources */,
+				849505202B89BD0500690026 /* MainTabView.swift in Sources */,
+				8411171A2B8A6B7E0022E844 /* ConfigureView.swift in Sources */,
+				841117242B8A95670022E844 /* FeedViewModel.swift in Sources */,
+				841117202B8A88670022E844 /* PostService.swift in Sources */,
+				8495052B2B89C74800690026 /* TextArea.swift in Sources */,
+				849505342B89D4B500690026 /* RoundedShape.swift in Sources */,
+				849505432B89F53600690026 /* AuthViewModel.swift in Sources */,
+				8411172B2B8ADE860022E844 /* Message.swift in Sources */,
+				849505322B89D17D00690026 /* RegistrationView.swift in Sources */,
+				841117222B8A8A050022E844 /* UploadPostViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849504F02B898BCD00690026 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849504F92B898BCD00690026 /* HackIllinoisAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849504FA2B898BCD00690026 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849505052B898BCD00690026 /* HackIllinoisAppUITestsLaunchTests.swift in Sources */,
+				849505032B898BCD00690026 /* HackIllinoisAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		849504F62B898BCD00690026 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 849504E22B898BCA00690026 /* HackIllinoisApp */;
+			targetProxy = 849504F52B898BCD00690026 /* PBXContainerItemProxy */;
+		};
+		849505002B898BCD00690026 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 849504E22B898BCA00690026 /* HackIllinoisApp */;
+			targetProxy = 849504FF2B898BCD00690026 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		849505062B898BCD00690026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		849505072B898BCD00690026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		849505092B898BCD00690026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HackIllinoisApp/HackIllinoisApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HackIllinoisApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = soumilrathi.IlliniConnect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8495050A2B898BCD00690026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HackIllinoisApp/HackIllinoisApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HackIllinoisApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = soumilrathi.IlliniConnect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8495050C2B898BCD00690026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = soumilrathi.HackIllinoisAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackIllinoisApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HackIllinoisApp";
+			};
+			name = Debug;
+		};
+		8495050D2B898BCD00690026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = soumilrathi.HackIllinoisAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackIllinoisApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HackIllinoisApp";
+			};
+			name = Release;
+		};
+		8495050F2B898BCD00690026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = soumilrathi.HackIllinoisAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HackIllinoisApp;
+			};
+			name = Debug;
+		};
+		849505102B898BCD00690026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = soumilrathi.HackIllinoisAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HackIllinoisApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		849504DE2B898BC900690026 /* Build configuration list for PBXProject "HackIllinoisApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849505062B898BCD00690026 /* Debug */,
+				849505072B898BCD00690026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		849505082B898BCD00690026 /* Build configuration list for PBXNativeTarget "HackIllinoisApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849505092B898BCD00690026 /* Debug */,
+				8495050A2B898BCD00690026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8495050B2B898BCD00690026 /* Build configuration list for PBXNativeTarget "HackIllinoisAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8495050C2B898BCD00690026 /* Debug */,
+				8495050D2B898BCD00690026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8495050E2B898BCD00690026 /* Build configuration list for PBXNativeTarget "HackIllinoisAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8495050F2B898BCD00690026 /* Debug */,
+				849505102B898BCD00690026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		849505392B89E7F700690026 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8495053A2B89E7F700690026 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 849505392B89E7F700690026 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		8495053C2B89E7F700690026 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 849505392B89E7F700690026 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		8495053E2B89E7F700690026 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 849505392B89E7F700690026 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		849505402B89E7F700690026 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 849505392B89E7F700690026 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 849504DB2B898BC900690026 /* Project object */;
+}
